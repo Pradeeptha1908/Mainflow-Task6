@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product & Buyer Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Product & Buyer Management</h1>
+
+    <div class="form-container">
+        <h2>Add Product</h2>
+        <form id="product-form">
+            <label for="product-name">Product Name:</label>
+            <input type="text" id="product-name" required>
+
+            <label for="product-price">Product Price:</label>
+            <input type="number" id="product-price" required>
+
+            <button type="submit">Add Product</button>
+        </form>
+
+        <h2>Add Buyer</h2>
+        <form id="buyer-form">
+            <label for="buyer-name">Buyer Name:</label>
+            <input type="text" id="buyer-name" required>
+
+            <label for="buyer-contact">Buyer Contact:</label>
+            <input type="text" id="buyer-contact" required>
+
+            <button type="submit">Add Buyer</button>
+        </form>
+    </div>
+
+    <div class="search-container">
+        <h2>Search Products/Buyers</h2>
+        <label for="search-input">Search:</label>
+        <input type="text" id="search-input" oninput="searchItems()" placeholder="Search by name...">
+
+        <h3>Search Results:</h3>
+        <ul id="search-results">
+            <!-- Results will be populated here -->
+        </ul>
+    </div>
+
+    <h2>Products</h2>
+    <ul id="product-list">
+        <!-- Product list will be populated here -->
+    </ul>
+
+    <h2>Buyers</h2>
+    <ul id="buyer-list">
+        <!-- Buyer list will be populated here -->
+    </ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
